@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>Kalkulator BMI</h1>
+        <p>Gunakan kalkulator ini untuk memeriksa Indeks Massa Tubuh (IMT) Anda.</p>
+
+        <div class="input-group">
+            <label>Jenis Kelamin:</label>
+            <div class="gender-options">
+                <input type="radio" id="laki-laki" name="gender" value="male" checked>
+                <label for="laki-laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="gender" value="female">
+                <label for="perempuan">Perempuan</label>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="tinggi">Tinggi Badan (cm)</label>
+            <input type="number" id="tinggi" placeholder="Masukkan tinggi badan Anda">
+        </div>
+
+        <div class="input-group">
+            <label for="berat">Berat Badan (kg)</label>
+            <input type="number" id="berat" placeholder="Masukkan berat badan Anda">
+        </div>
+
+        <button id="hitung-bmi">Hitung BMI</button>
+
+        <div id="hasil-container">
+            <h3>Hasil BMI Anda:</h3>
+            <p id="hasil-bmi">-</p>
+            <p id="kategori-bmi"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
